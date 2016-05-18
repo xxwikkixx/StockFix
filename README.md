@@ -1,6 +1,8 @@
 TODO:
 * ~~Mailgun API to send email for forgotten password~~
 
+* Chat application for users on the webiste
+
 * User Watchlist Integration
 
 * Chart Pattern recognition using computer vision API
