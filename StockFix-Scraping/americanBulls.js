@@ -23,7 +23,6 @@ function read(){
 }
 
 function AbullsScrape(test){
-  var writer = csvWriter()
   var dosome = new Nightmare()
     .viewport(1280,1000)
     .goto('https://www.americanbulls.com/Default.aspx?lang=en')
@@ -41,21 +40,20 @@ function AbullsScrape(test){
     .then(function(data){
       //console.log('run')
       //data = data being scraped and being output on the console log
-      console.log(test);
+      console.log(test)
       console.log(data)
-
     });
 
   // return promise!
   return dosome;
 }
 
-read
+read();
 
 //gets the table on the main page of the americanbulls website
 function AmerBullsMain(){
   var aBulls = new Nightmare()
-  .viewport(800,600)
+  .viewport(1280,1000)
   .goto('https://www.americanbulls.com/Default.aspx?lang=en')
   .wait()
   .screenshot('./stock.png')
