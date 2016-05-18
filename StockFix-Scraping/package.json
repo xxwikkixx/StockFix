@@ -8,7 +8,8 @@
   },
   "dependencies": {
   	"nightmare": "*",
-    "promise": "*"
+    "promise": "*",
+    "csv-write-stream": "*"
   },
   "author": "",
   "license": "ISC"

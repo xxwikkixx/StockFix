@@ -1,13 +1,14 @@
 "use strict";
 var fs = require('fs');
 var Nightmare = require('nightmare');
+var csvWriter = require('csv-write-stream')
 
 function read(){
     fs.readFile('nasdaqlisted.txt', function(err, data){
         if(err) throw err;
 
         const array = data.toString().split("\n");
-        const nextSomeThing = char => () => dosomething(char);
+        const nextSomeThing = char => () => AbullsScrape(char);
 
         let promise = Promise.resolve();
 
@@ -21,7 +22,8 @@ function read(){
     }); 
 }
 
-function dosomething(test){
+function AbullsScrape(test){
+  var writer = csvWriter()
   var dosome = new Nightmare()
     .viewport(1280,1000)
     .goto('https://www.americanbulls.com/Default.aspx?lang=en')
