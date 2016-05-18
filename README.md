@@ -47,12 +47,12 @@ http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
 * Deep learning implementation (maybe)
 http://cs.stanford.edu/people/karpathy/convnetjs/
 
-* Sentimental analysis 
+* ~~Sentimental analysis 
 https://github.com/thinkroth/Sentimental
 https://github.com/thisandagain/sentiment
 https://github.com/sloria/TextBlob
 https://github.com/watson-developer-cloud/node-sdk#tone-analyzer
-http://www.alchemyapi.com/api
+http://www.alchemyapi.com/api~~
 
 /*****************************************************/
 npm i
