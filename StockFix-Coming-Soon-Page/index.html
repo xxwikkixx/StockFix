@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Mawsom</title>
+
+<!--CSS-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap-light.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!--/CSS-->
+
+<!--JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.plugin.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script>
+$(function () {
+	$('#defaultCountdown').countdown({until: new Date(2016, 5-1, 25)}); 
+	//Replace above date with your own
+});
+</script>
+<!--/JS-->
+
+</head>
+
+<body>
+
+<!--DARK OVERLAY-->
+<div class="overlay"></div>
+<!--/DARK OVERLAY-->
+
+<!--WRAP-->
+<div id="wrap">
+	<!--CONTAINER-->
+	<div class="container">
+		<img src="images/logo.png" alt="Paper Plane" class="image-align" />
+		<h1>
+			<span>We are</span><br/>
+			Reaching For <span class="yellow">The Moon.</span>
+		</h1>
+		<p>Our site is currently <strong>under construction</strong> but we are working hard<br/> to bring something awesome your way!</p>
+		<div id="defaultCountdown"></div>
+		
+	</div>
+	<!--/CONTAINER-->
+</div>
+<!--/WRAP-->
+
+</body>
+</html>

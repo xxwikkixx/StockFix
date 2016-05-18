@@ -1,0 +1,52 @@
+{
+	"name": "mawsom",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts":{
+		"tests": "",
+		"start": "node app.js"
+	},
+	"keywords": [
+    "stripe",
+    "subscription",
+    "membership",
+    "saas",
+    "plan"
+  ],
+	"author": "",
+	"licence": "MIT",
+	
+	"dependencies": {
+	"express": "*",
+	"passport": "*",
+	"passport-local" : "*",
+	"stripe" : "*",
+	"stripe-webhook-middleware": "^0.2.0",
+	"async" : "*",
+	"card" : "*",
+	"magnific-popup" : "*",
+	"packery" : "*",
+	"floatthead" : "*",
+	"swig" : "*",
+	"serve-favicon" : "*",
+	"express-flash": "*",
+    "express-session": "*",
+    "express-subdomain": "^1.0.1",
+    "express-validator": "^2.6.0",
+    "lodash": "^2.4.1",
+    "middleware-responder": "^1.0.0",
+    "mongoose": "^4.2.5",
+    "mongoose-timestamp": "^0.3.0",
+    "morgan": "~1.3.0",
+    "nodemailer": "^1.3.0",
+    "nodemailer-mailgunapi-transport": "0.0.3",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.8.4",
+    "compression": "*",
+    "connect-mongo": "*",
+    "cookie-parser": "~1.3.3",
+    "cors": "*",
+    "debug": "~2.0.0"
+	}
+}
