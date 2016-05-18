@@ -34,6 +34,8 @@ https://github.com/extrabacon/python-shell
 * istockpicker.com
 * http://www.surgetraders.com/trading-chat/
 * simplywall.st
+* claytrader
+
 
 * Robinhood nodejs API integration
 https://github.com/aurbano/robinhood-node
