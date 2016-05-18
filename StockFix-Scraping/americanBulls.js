@@ -50,4 +50,22 @@ function AbullsScrape(test){
   return dosome;
 }
 
-read();
+read
+
+//gets the table on the main page of the americanbulls website
+function AmerBullsMain(){
+  var aBulls = new Nightmare()
+  .viewport(800,600)
+  .goto('https://www.americanbulls.com/Default.aspx?lang=en')
+  .wait()
+  .screenshot('./stock.png')
+  .evaluate(function () {
+        console.log(document.querySelector('#MainContent_newpatternofthedaytopright').innerText);
+        return document.querySelector('#MainContent_newpatternofthedaytopright').innerText;
+      })
+  .end()
+  .then(function(data){
+      console.log('run')
+      console.log(data)
+  })
+}
