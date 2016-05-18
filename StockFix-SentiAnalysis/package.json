@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-  	"sentiment": "*"
+  	"sentiment": "*",
+    "Sentimental": "*"
   },
   "author": "",
   "license": "ISC"
