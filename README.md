@@ -19,6 +19,9 @@ https://www.quantopian.com/help
 
 * Stock News Scraper
 
+* Stock graphs
+https://github.com/andredumas/techan.js
+
 * Stock pick charts for (Long) and (day trader)
 
 * ~~User Auth~~

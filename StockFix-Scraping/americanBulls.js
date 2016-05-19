@@ -22,6 +22,14 @@ function read(){
     }); 
 }
 
+function wrtieFile(output){
+  var stream = fs.createWriteStream("output.txt");
+  stream.one('open', function(fd){
+    stream.write(output);
+    stream.end();
+  })
+}
+
 function AbullsScrape(test){
   var dosome = new Nightmare()
     .viewport(1280,1000)
@@ -42,6 +50,7 @@ function AbullsScrape(test){
       //data = data being scraped and being output on the console log
       console.log(test)
       console.log(data)
+      fs.writeFile('output.txt', data);
     });
 
   // return promise!
