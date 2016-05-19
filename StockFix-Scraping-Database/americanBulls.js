@@ -22,15 +22,9 @@ function read(){
     }); 
 }
 
-function wrtieFile(output){
-  var stream = fs.createWriteStream("output.txt");
-  stream.one('open', function(fd){
-    stream.write(output);
-    stream.end();
-  })
-}
 
 function AbullsScrape(test){
+  const file_name = test + '.txt';
   var dosome = new Nightmare()
     .viewport(1280,1000)
     .goto('https://www.americanbulls.com/Default.aspx?lang=en')
@@ -49,8 +43,10 @@ function AbullsScrape(test){
       //console.log('run')
       //data = data being scraped and being output on the console log
       console.log(test)
+      console.log(typeof test);
+      //console.log(file_name);
       console.log(data)
-      fs.writeFile('output.txt', data);
+      //fs.writeFile(file_name, (data) => console.log('finished'));
     });
 
   // return promise!

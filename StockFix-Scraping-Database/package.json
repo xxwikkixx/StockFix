@@ -9,7 +9,8 @@
   "dependencies": {
   	"nightmare": "*",
     "promise": "*",
-    "csv-write-stream": "*"
+    "csv-write-stream": "*",
+    "mysql": "*"
   },
   "author": "",
   "license": "ISC"
