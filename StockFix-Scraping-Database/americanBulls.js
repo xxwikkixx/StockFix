@@ -43,7 +43,6 @@ function AbullsScrape(test){
       //console.log('run')
       //data = data being scraped and being output on the console log
       console.log(test)
-      console.log(typeof test);
       //console.log(file_name);
       console.log(data)
       //fs.writeFile(file_name, (data) => console.log('finished'));

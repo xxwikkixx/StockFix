@@ -3,7 +3,6 @@
 var debug = require('debug')('app');
 var app = require('./server/login');
 
-var restApp = require('./scrapers/resttest');
 
 app.set('port', process.env.PORT || 3000);
 
