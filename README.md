@@ -4,7 +4,7 @@
 ### Main Site Features: 
 * ~~Mailgun API to send email for forgotten password~~
 * ~~User Auth~~
-* ~~Subscription Strip API~~
+* ~~Subscription Stripe API~~
 * Chat for users on the webiste
 * User Watchlist Integration
 * Stock pick charts for (Long) and (day trader)
