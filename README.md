@@ -5,6 +5,7 @@
 * ~~Mailgun API to send email for forgotten password~~
 * ~~User Auth~~
 * ~~Subscription Stripe API~~
+* User portal Dashboard
 * Chat for users on the webiste
 * User Watchlist Integration
 * Stock pick charts for (Long) and (day trader)
