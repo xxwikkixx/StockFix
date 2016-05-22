@@ -56,10 +56,10 @@ https://github.com/extrabacon/python-shell
 
 
 ### Running the project (windows)
-'npm i'
-'node server.js'
-'C:\mongodb\bin .\mongod.exe --dbpath C:\mongodb\data'
-'C:\mongodb\bin .\mongo.exe'
+1. npm i
+2. node server.js'
+3. C:\mongodb\bin .\mongod.exe --dbpath C:\mongodb\data
+4. C:\mongodb\bin .\mongo.exe
 
 
 
