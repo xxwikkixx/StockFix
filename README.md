@@ -64,7 +64,7 @@ https://github.com/extrabacon/python-shell
 
 
 ### Android App 
-building a mobile app for this project
+Build a mobile app for this project
 * PassportJS for android app
 https://github.com/dzt/MobilePassport
 
