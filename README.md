@@ -7,36 +7,22 @@
 * ~~Subscription Strip API~~
 * Chat for users on the webiste
 * User Watchlist Integration
+* Stock pick charts for (Long) and (day trader)
 * Signal table for using for stock picks: https://github.com/mkoryak/floatThead
+* Stock graphs: https://github.com/andredumas/techan.js
 
 
 ### API Integration:
 * Stocktwits API integration
 http://stocktwits.com/developers
 https://github.com/simov/stocktwits
-
-* Chart Pattern recognition using computer vision API
-https://github.com/mjstromberg/stock-patterns
-
-
-
 * Quantopian API integration
 https://www.quantopian.com/help
-
-* Summarizer for market news
-
-* Stock News Scraper
-
-* Stock graphs
-https://github.com/andredumas/techan.js
-
-* Stock pick charts for (Long) and (day trader)
+* Robinhood nodejs API integration
+https://github.com/aurbano/robinhood-node
 
 
-
-* nodejs python integration for backend scripts
-https://github.com/extrabacon/python-shell
-
+### Website to be scraped for data: 
 * traceinvest.com
 * americanbulls.com
 * estockpicks.com
@@ -46,22 +32,29 @@ https://github.com/extrabacon/python-shell
 * simplywall.st
 * claytrader
 
-
-* Robinhood nodejs API integration
-https://github.com/aurbano/robinhood-node
-
-* Norch search engine implementation: https://github.com/fergiemcdowall/norch
-* text Search: http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
-
-* Deep learning implementation (maybe)
-http://cs.stanford.edu/people/karpathy/convnetjs/
-
+### Backend Features
+* Chart Pattern recognition using computer vision API
+https://github.com/mjstromberg/stock-patterns
+* Stock News Scraper
+* Summarizing market news and doing Sentimental analysis on it.
 * ~~Sentimental analysis 
 https://github.com/thinkroth/Sentimental
 https://github.com/thisandagain/sentiment
 https://github.com/sloria/TextBlob
 https://github.com/watson-developer-cloud/node-sdk#tone-analyzer
 http://www.alchemyapi.com/api~~
+* Norch search engine implementation: https://github.com/fergiemcdowall/norch
+* text Search: http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
+* Deep learning implementation (maybe)
+http://cs.stanford.edu/people/karpathy/convnetjs/
+
+
+### Flask 
+Might use python flask to do build REST API depending on how much js I can do.
+* nodejs python integration for backend scripts
+https://github.com/extrabacon/python-shell
+
+
 
 /*****************************************************/
 npm i
@@ -71,11 +64,8 @@ C:\mongodb\bin .\mongo.exe
 /*****************************************************/
 
 
-
-
-/**************************************************/
+### Android App 
 building a mobile app for this project
-
 PassportJS for android app
 https://github.com/dzt/MobilePassport
-/**************************************************/
+
