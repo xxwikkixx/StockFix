@@ -55,8 +55,10 @@ module.exports = function(passport){
             });
             return done(null, false, req.flash('error', 'An account with that email address already exists.'));
           }
-          // edit this portion to accept other properties when creating a user.
+          // edit this portion to acept other properties when creating a user.
           var user = new User({
+            name : req.body.name,
+            number: req.body.number,
             email: req.body.email,
             password: req.body.password // user schema pre save task hashes this password
           });

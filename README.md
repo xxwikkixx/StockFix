@@ -25,7 +25,7 @@ https://github.com/aurbano/robinhood-node
 
 ### Website to be scraped for data: 
 * traceinvest.com
-* americanbulls.com
+* ~~americanbulls.com~~
 * estockpicks.com
 * tim alerts
 * istockpicker.com
