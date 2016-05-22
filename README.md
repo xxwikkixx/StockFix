@@ -1,16 +1,24 @@
-TODO:
+## TO-DO List:
+
+
+### Main Site Features: 
 * ~~Mailgun API to send email for forgotten password~~
-
-* Chat application for users on the webiste
-
+* ~~User Auth~~
+* ~~Subscription Strip API~~
+* Chat for users on the webiste
 * User Watchlist Integration
+* Signal table for using for stock picks: https://github.com/mkoryak/floatThead
+
+
+### API Integration:
+* Stocktwits API integration
+http://stocktwits.com/developers
+https://github.com/simov/stocktwits
 
 * Chart Pattern recognition using computer vision API
 https://github.com/mjstromberg/stock-patterns
 
-* Stocktwits API integration
-http://stocktwits.com/developers
-https://github.com/simov/stocktwits
+
 
 * Quantopian API integration
 https://www.quantopian.com/help
@@ -24,8 +32,7 @@ https://github.com/andredumas/techan.js
 
 * Stock pick charts for (Long) and (day trader)
 
-* ~~User Auth~~
-* ~~Subscription Strip API~~
+
 
 * nodejs python integration for backend scripts
 https://github.com/extrabacon/python-shell
@@ -43,13 +50,8 @@ https://github.com/extrabacon/python-shell
 * Robinhood nodejs API integration
 https://github.com/aurbano/robinhood-node
 
-* table for using for stock picks
-https://github.com/mkoryak/floatThead
-
-* Norch search engine implementation 
-https://github.com/fergiemcdowall/norch
-* text Search
-http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
+* Norch search engine implementation: https://github.com/fergiemcdowall/norch
+* text Search: http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
 
 * Deep learning implementation (maybe)
 http://cs.stanford.edu/people/karpathy/convnetjs/
