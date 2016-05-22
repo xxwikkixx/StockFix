@@ -55,13 +55,12 @@ Might use python flask to do build REST API depending on how much js I can do.
 https://github.com/extrabacon/python-shell
 
 
-
-/*****************************************************/
+### Running the project (windows)
 npm i
 node server.js
 C:\mongodb\bin .\mongod.exe --dbpath C:\mongodb\data
 C:\mongodb\bin .\mongo.exe
-/*****************************************************/
+
 
 
 ### Android App 
