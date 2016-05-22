@@ -28,7 +28,7 @@ https://github.com/aurbano/robinhood-node
 * estockpicks.com
 * tim alerts
 * istockpicker.com
-* http://www.surgetraders.com/trading-chat/
+* surgetraders.com
 * simplywall.st
 * claytrader
 
@@ -65,6 +65,6 @@ https://github.com/extrabacon/python-shell
 
 ### Android App 
 building a mobile app for this project
-PassportJS for android app
+* PassportJS for android app
 https://github.com/dzt/MobilePassport
 
