@@ -31,7 +31,8 @@ https://github.com/aurbano/robinhood-node
 * istockpicker.com
 * surgetraders.com
 * simplywall.st
-* claytrader
+* claytrader.com
+* warriortrading.com
 
 ### Backend Features
 * Chart Pattern recognition using computer vision API
