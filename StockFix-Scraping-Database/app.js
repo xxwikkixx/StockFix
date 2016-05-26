@@ -5,7 +5,7 @@ var fs = require('fs')
 var con = mysql.createConnection({
 	host: "localhost",
 	user: "wikki",
-	password: "wikki123",
+	password: "",
 	database: "mydb"
 });
 
