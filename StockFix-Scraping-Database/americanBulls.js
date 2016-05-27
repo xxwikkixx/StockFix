@@ -2,7 +2,7 @@
 var fs = require('fs');
 var Nightmare = require('nightmare');
 var csvWriter = require('csv-write-stream');
-var mysql = requrire('mysql');
+var mysql = require('mysql');
 
 //sending the data being scraped to the mysql database
 function ConDB(date, buy, sell, price){

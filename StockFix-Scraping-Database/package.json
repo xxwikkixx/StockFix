@@ -10,7 +10,9 @@
   	"nightmare": "*",
     "promise": "*",
     "csv-write-stream": "*",
-    "mysql": "*"
+    "mysql": "*",
+    "node-mysql": "*",
+    "fs": "*"
   },
   "author": "",
   "license": "ISC"
