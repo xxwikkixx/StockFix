@@ -79,8 +79,9 @@ function AbullsScrape(test){
     .then(function signal(data){
       //console.log('run')
       //data = data being scraped and being output on the console log
-      //console.log(test)
-      //console.log(data)
+      console.log(test)
+      console.log(data)
+      fs.appendFile('out.txt', test.toString(), function(err){});
       fs.appendFile('out.txt', data.toString(), function(err){});
     });
 
