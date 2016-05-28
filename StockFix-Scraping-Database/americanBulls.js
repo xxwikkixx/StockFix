@@ -67,18 +67,21 @@ function AbullsScrape(test){
     .click('#SearchButton')
     .wait(1000)
     .screenshot('./screen.png')
-    .evaluate(function(){
-      console.log(document.querySelector('#MainContent_signalpagehistorytab').innerText);
+    .evaluate(function name(){
+      return document.querySelector('#MainContent_CompanyTicker').innerText;
+    })
+    .evaluate(function signal(){
+      //console.log(document.querySelector('#MainContent_ticker').innerText);
+      //console.log(document.querySelector('#MainContent_signalpagehistorytab').innerText);
       return document.querySelector('#MainContent_signalpagehistorytab').innerText;
     })
     .end()
-    .then(function(data){
+    .then(function signal(data){
       //console.log('run')
       //data = data being scraped and being output on the console log
-      console.log(test)
-      //console.log(file_name);
-      console.log(data)
-      //fs.writeFile(file_name, (data) => console.log('finished'));
+      //console.log(test)
+      //console.log(data)
+      fs.appendFile('out.txt', data.toString(), function(err){});
     });
 
   // return promise!
