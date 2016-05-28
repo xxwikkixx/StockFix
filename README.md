@@ -57,6 +57,11 @@ http://www.alchemyapi.com/api~~
 http://cs.stanford.edu/people/karpathy/convnetjs/
 
 
+###Machine learning
+* Candle stick patterns: http://stockcharts.com/school/doku.php?id=chart_school:chart_analysis:introduction_to_candlesticks
+* detect candle stick patters on charts to detect bullish and bearish market.
+
+
 ### REST API
 * http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/
 * Might use python flask to do build REST API depending on how much js I can do.
