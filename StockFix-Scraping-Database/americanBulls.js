@@ -58,7 +58,7 @@ function read(){
 //search bar on the the website then scraping the signals.
 function AbullsScrape(test){
   const file_name = test + '.txt';
-  var dosome = new Nightmare()
+  var scrape = new Nightmare()
     .viewport(1280,1000)
     .goto('https://www.americanbulls.com/Default.aspx?lang=en')
     .wait()
@@ -82,7 +82,7 @@ function AbullsScrape(test){
     });
 
   // return promise!
-  return dosome;
+  return scrape;
 }
 
 read();

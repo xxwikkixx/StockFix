@@ -12,7 +12,8 @@
     "csv-write-stream": "*",
     "mysql": "*",
     "node-mysql": "*",
-    "fs": "*"
+    "fs": "*",
+    "wait.for": "*"
   },
   "author": "",
   "license": "ISC"
