@@ -28,15 +28,13 @@ function ConDB(date, buy, sell, price){
     console.log('data recieved');
     console.log(records);
   });
-
   con.end(function(err){
-
   });
 }
 
 //reads the text file with all the stock tickers
 function read(){
-    fs.readFile('nasdaqlisted.txt', function(err, data){
+    fs.readFile('nasdaqlisted.txt', 'utf8', function(err, data){
         if(err) throw err;
 
         const array = data.toString().split("\n");
@@ -57,7 +55,7 @@ function read(){
 //scrapes the americanbulls.com website by inputing the stock tickers in the 
 //search bar on the the website then scraping the signals.
 function AbullsScrape(test){
-  const file_name = test + '.txt';
+  //const file_name = test + '.txt';
   var scrape = new Nightmare()
     .viewport(1280,1000)
     .goto('https://www.americanbulls.com/Default.aspx?lang=en')
@@ -65,24 +63,30 @@ function AbullsScrape(test){
     .type('input[id="SearchBox"]', test)
     .wait()
     .click('#SearchButton')
-    .wait(1000)
+    .wait(500)
     .screenshot('./screen.png')
     .evaluate(function name(){
       return document.querySelector('#MainContent_CompanyTicker').innerText;
     })
+    /*.then(function(data){
+      store data 
+      return evaluate(function(){...})
+    }).then(function(){...}){}*/
     .evaluate(function signal(){
       //console.log(document.querySelector('#MainContent_ticker').innerText);
       //console.log(document.querySelector('#MainContent_signalpagehistorytab').innerText);
       return document.querySelector('#MainContent_signalpagehistorytab').innerText;
     })
-    .end()
     .then(function signal(data){
       //console.log('run')
       //data = data being scraped and being output on the console log
-      console.log(test)
-      console.log(data)
-      fs.appendFile('out.txt', test.toString(), function(err){});
-      fs.appendFile('out.txt', data.toString(), function(err){});
+      //console.log(test)
+      
+      //fs.appendFile('out.txt', test.toString(), function(err){});
+      fs.appendFileSync('out.txt', data.toString(),'utf8', function(err){});
+      fs.appendFileSync('out.txt', test.toString(),'utf8', function(err){});
+      console.log(data);
+      console.log(typeof(test));
     });
 
   // return promise!
