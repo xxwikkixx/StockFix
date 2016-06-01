@@ -7,7 +7,7 @@ var mysql = require('mysql');
 
 //reads the text file with all the stock tickers
 function read(){
-    fs.readFile('D.txt', 'utf8', function(err, data){
+    fs.readFile('F.txt', 'utf8', function(err, data){
         if(err) throw err;
 
         const array = data.toString().split("\n");
@@ -54,8 +54,8 @@ function AbullsScrape(test){
       //console.log(test)
       
       //fs.appendFile('out.txt', test.toString(), function(err){});
-      fs.appendFileSync('D_list.txt', test.toString(),'utf8', function(err){});
-      fs.appendFileSync('D_list.txt', data.toString(),'utf8', function(err){});
+      fs.appendFileSync('F_list.txt', test.toString(),'utf8', function(err){});
+      fs.appendFileSync('F_list.txt', data.toString(),'utf8', function(err){});
       console.log(data);
     });
   // return promise!
