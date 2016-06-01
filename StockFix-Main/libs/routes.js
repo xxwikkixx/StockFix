@@ -2,19 +2,19 @@
 
 // middleware
 var StripeWebhook = require('stripe-webhook-middleware'),
-isAuthenticated = require('./middleware/auth').isAuthenticated,
-isUnauthenticated = require('./middleware/auth').isUnauthenticated,
+isAuthenticated = require('../middleware/auth').isAuthenticated,
+isUnauthenticated = require('../middleware/auth').isUnauthenticated,
 setRender = require('middleware-responder').setRender,
 setRedirect = require('middleware-responder').setRedirect,
-stripeEvents = require('./middleware/stripe-events'),
-secrets = require('./config/secrets');
+stripeEvents = require('../middleware/stripe-events'),
+secrets = require('../config/secrets');
 // controllers
-var users = require('./controllers/users-controller'),
-main = require('./controllers/main-controller'),
-dashboard = require('./controllers/dashboard-controller'),
-passwords = require('./controllers/passwords-controller'),
-registrations = require('./controllers/registrations-controller'),
-sessions = require('./controllers/sessions-controller');
+var users = require('../controllers/users-controller'),
+main = require('../controllers/main-controller'),
+dashboard = require('../controllers/dashboard-controller'),
+passwords = require('../controllers/passwords-controller'),
+registrations = require('../controllers/registrations-controller'),
+sessions = require('../controllers/sessions-controller');
 
 var stripeWebhook = new StripeWebhook({
   stripeApiKey: secrets.stripeOptions.apiKey,
@@ -74,7 +74,7 @@ module.exports = function (app, passport) {
     passwords.postToken);
 
   app.get('/dashboard',
-    setRender('dashboard/index'),
+    setRender('/dashboard/index'),
     setRedirect({auth: '/'}),
     isAuthenticated,
     dashboard.getDefault);

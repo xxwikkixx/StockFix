@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var debug = require('debug')('app');
-var app = require('./server/login');
+var app = require('./libs/login');
 
 
 app.set('port', process.env.PORT || 3000);

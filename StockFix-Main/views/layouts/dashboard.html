@@ -26,11 +26,11 @@
           <ul class="nav navbar-nav">
 
             <li {%if path == '/dashboard'%}class="active"{%endif%}><a href="/dashboard">Home</a></li>
-            
+
             <li {%if path == '/signals'%}class="active"{%endif%}><a href="/signals">Signals</a></li>
 
             <li {%if path == '/information'%}class="active"{%endif%}><a href="/information">Information</a></li>
-            
+
           </ul>
           <ul class="nav navbar-nav navbar-right">
           <li {%if path == '/profile'%}class="active"{%endif%}><a href="/profile">Profile</a></li>
@@ -59,8 +59,8 @@
     <script type="text/javascript">
       Stripe.setPublishableKey('{{stripePubKey}}');
     </script>
-    <script src="/javascripts/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="/javascripts/app.js"></script>
+    <script href="public/js/jquery.min.js"></script>
+    <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script href="public/js/app.js"></script>
 </body>
 </html>

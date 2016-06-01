@@ -3,7 +3,7 @@
 var express = require('express');
 var swig = require('swig');
 var subdomainOffset = process.env.SUBDOMAIN_OFFSET || 0;
-var secrets = require('./config/secrets');
+var secrets = require('../config/secrets');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -17,8 +17,8 @@ var compress = require('compression')();
 var lodash = require('lodash');
 // var Authentication = require('./authentication');
 var expressValidator = require('express-validator');
-var errorHandler = require('./middleware/error');
-var viewHelper = require('./middleware/view-helper');
+var errorHandler = require('../middleware/error');
+var viewHelper = require('../middleware/view-helper');
 var flash = require('express-flash');
 var cors = require('cors');
 var corsOptions = {
@@ -42,27 +42,28 @@ var app = express();
 if (app.get('env') === 'production') {
   app.locals.production = true;
   swig.setDefaults({ cache: 'memory' });
-  staticDir = path.join(__dirname + '/../public');
+  staticDir = path.join(__dirname + '/../public/');
+  console.log(staticDir);
 } else {
   app.locals.production = false;
   swig.setDefaults({ cache: false });
-  staticDir = path.join(__dirname + '/../public');
+  staticDir = path.join(__dirname + '/../public/');
+  console.log(staticDir);
+
 }
 
 // This is where all the magic happens!
 app.engine('html', swig.renderFile);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/../views/'));
 app.set('view engine', 'html');
 app.locals._ = lodash;
 app.locals.stripePubKey = secrets.stripeOptions.stripePubKey;
 
 
-
-
 //sup dawg
 app.use(express.static('public'));
-app.use(express.static('src'));
-app.use(express.static('src/views'));
+app.use(express.static('views'));
+//app.use(express.static('src/views'));
 
 
 
@@ -101,7 +102,7 @@ app.use(passport.session());
 app.use(flash());
 app.use(cors(corsOptions));
 
-var passportMiddleware = require('./middleware/passport');
+var passportMiddleware = require('../middleware/passport');
 passportMiddleware(passport);
 
 // setup view helper
