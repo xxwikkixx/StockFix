@@ -54,8 +54,8 @@ function AbullsScrape(test){
       //console.log(test)
       
       //fs.appendFile('out.txt', test.toString(), function(err){});
-      fs.appendFileSync('out.txt', test.toString(),'utf8', function(err){});
-      fs.appendFileSync('out.txt', data.toString(),'utf8', function(err){});
+      fs.appendFileSync('C list.txt', test.toString(),'utf8', function(err){});
+      fs.appendFileSync('C list.txt', data.toString(),'utf8', function(err){});
       console.log(data);
     });
   // return promise!
