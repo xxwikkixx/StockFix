@@ -4,37 +4,10 @@ var Nightmare = require('nightmare');
 var csvWriter = require('csv-write-stream');
 var mysql = require('mysql');
 
-//sending the data being scraped to the mysql database
-function ConDB(date, buy, sell, price){
-  var con = mysql.createConnection({
-    host: 'localhost',
-    user: 'wikki',
-    password: '',
-    database: 'stockfix'
-  });
-//sets up the connection to the mysql db and handles erro
-  con.connect(function(err){
-    if(err){
-      console.log('error connection to db');
-      return;
-    }
-    console.log('connection established');
-  });
-
-
-//outputs all the tables from the mysql db to the console
-  con.query('SELECT * FROM symbols', function(err, records){
-    if(err) throw err;
-    console.log('data recieved');
-    console.log(records);
-  });
-  con.end(function(err){
-  });
-}
 
 //reads the text file with all the stock tickers
 function read(){
-    fs.readFile('nasdaqlisted.txt', 'utf8', function(err, data){
+    fs.readFile('C.txt', 'utf8', function(err, data){
         if(err) throw err;
 
         const array = data.toString().split("\n");
@@ -59,15 +32,12 @@ function AbullsScrape(test){
   var scrape = new Nightmare()
     .viewport(1280,1000)
     .goto('https://www.americanbulls.com/Default.aspx?lang=en')
-    .wait()
+    .wait(1000)
     .type('input[id="SearchBox"]', test)
     .wait()
     .click('#SearchButton')
-    .wait(500)
+    .wait(5000)
     .screenshot('./screen.png')
-    .evaluate(function name(){
-      return document.querySelector('#MainContent_CompanyTicker').innerText;
-    })
     /*.then(function(data){
       store data 
       return evaluate(function(){...})
@@ -77,18 +47,17 @@ function AbullsScrape(test){
       //console.log(document.querySelector('#MainContent_signalpagehistorytab').innerText);
       return document.querySelector('#MainContent_signalpagehistorytab').innerText;
     })
+    .end()
     .then(function signal(data){
       //console.log('run')
       //data = data being scraped and being output on the console log
       //console.log(test)
       
       //fs.appendFile('out.txt', test.toString(), function(err){});
-      fs.appendFileSync('out.txt', data.toString(),'utf8', function(err){});
       fs.appendFileSync('out.txt', test.toString(),'utf8', function(err){});
+      fs.appendFileSync('out.txt', data.toString(),'utf8', function(err){});
       console.log(data);
-      console.log(typeof(test));
     });
-
   // return promise!
   return scrape;
 }
