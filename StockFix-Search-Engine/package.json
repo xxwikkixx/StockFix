@@ -10,7 +10,8 @@
   	"express": "*",
   	"ejs": "*",
   	"mysql": "*",
-  	"node-mysql": "*"
+  	"node-mysql": "*",
+    "react-search-bar": "*"
   },
   "author": "",
   "license": "ISC"
