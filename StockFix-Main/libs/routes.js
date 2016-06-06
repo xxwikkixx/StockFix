@@ -72,9 +72,8 @@ module.exports = function (app, passport) {
     setRedirect({auth: '/dashboard', success: '/dashboard', failure: 'back'}),
     isUnauthenticated,
     passwords.postToken);
-
   app.get('/dashboard',
-    setRender('/dashboard/index'),
+    setRender('dashboard/home'),
     setRedirect({auth: '/'}),
     isAuthenticated,
     dashboard.getDefault);

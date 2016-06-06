@@ -4,7 +4,7 @@ var Plans = require('./plans.jsx');
 
 
 var Home = React.createClass({
-	render:function(){
+	render: function(){
 		return(
 			<div className='container-fluid container-max'>
 				<div className='page-header'>

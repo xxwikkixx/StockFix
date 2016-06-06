@@ -43,12 +43,10 @@ if (app.get('env') === 'production') {
   app.locals.production = true;
   swig.setDefaults({ cache: 'memory' });
   staticDir = path.join(__dirname + '/../public/');
-  console.log(staticDir);
 } else {
   app.locals.production = false;
   swig.setDefaults({ cache: false });
   staticDir = path.join(__dirname + '/../public/');
-  console.log(staticDir);
 
 }
 
@@ -64,8 +62,7 @@ app.locals.stripePubKey = secrets.stripeOptions.stripePubKey;
 app.use(express.static('public'));
 app.use(express.static('views'));
 //app.use(express.static('src/views'));
-
-
+app.set('public', path.join(__dirname, '/../public/'))
 
 app.use(favicon(path.join(__dirname + '/../public/favicon.ico')));
 app.use(logger('dev'));
@@ -111,7 +108,6 @@ app.use(viewHelper);
 // setup routes
 var routes = require('./routes');
 routes(app, passport);
-
 /// catch 404 and forwarding to error handler
 app.use(errorHandler.notFound);
 

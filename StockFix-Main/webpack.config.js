@@ -1,7 +1,7 @@
 module.exports = {
-  entry:'./src/components/home/home.jsx',
+  entry:'./views/components/home/home.jsx',
   output:{
-    filename: './public/javascripts/bundles/homeBundle.js'
+    filename: './public/js/bundles/homeBundle.js'
 
   },
   module:{
