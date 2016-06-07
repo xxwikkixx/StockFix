@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 class Dashboard extends React.Component {
 	render() {
 		return (
-			<div></div>
+			<div className='navbar navbar-default navbar-static-top' role='navigation'>
+				
+			</div>
 		);
 	}
 }

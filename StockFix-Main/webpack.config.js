@@ -1,7 +1,7 @@
 module.exports = {
-  entry:'./views/components/signals/signals.jsx',
+  entry:'./views/components/profile/profileMain.jsx',
   output:{
-    filename: './public/js/bundles/signalBundle.js'
+    filename: './public/js/bundles/profileBundle.js'
 
   },
   module:{
