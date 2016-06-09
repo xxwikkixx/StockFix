@@ -37,6 +37,8 @@ https://github.com/aurbano/robinhood-node
 * claytrader.com
 * warriortrading.com
 * mintcapitaltrading.com
+* estimize.com
+* apscan.capitalico.com/apscan/
 
 
 ### Backend Features
