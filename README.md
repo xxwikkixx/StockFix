@@ -39,7 +39,7 @@ https://github.com/aurbano/robinhood-node
 * mintcapitaltrading.com
 * estimize.com
 * apscan.capitalico.com/apscan/
-
+* enhancedinvestor.com
 
 ### Backend Features
 * Chart Pattern recognition using computer vision API
