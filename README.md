@@ -40,6 +40,8 @@ https://github.com/aurbano/robinhood-node
 * estimize.com
 * apscan.capitalico.com/apscan/
 * enhancedinvestor.com
+* strategies.whotrades.com/?market=usa&lang=en
+* tradingview.com
 
 ### Backend Features
 * Chart Pattern recognition using computer vision API
