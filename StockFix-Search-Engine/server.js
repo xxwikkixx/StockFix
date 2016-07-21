@@ -11,7 +11,7 @@ app.engine('html', require('ejs').renderFile);
 var connection = mysql.createConnection({
 	host : 'localhost',
 	user : 'wikki',
-	password : 'wikki123',
+	password : 'wikki',
 	database : 'world'
 });
 connection.connect();

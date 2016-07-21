@@ -6,8 +6,8 @@
 * ~~User Auth~~
 * ~~Subscription Stripe API~~
 * ~~User portal Dashboard~~
-* Chat for users on the webiste
-* User Watchlist Integration
+* Chat for users on the webiste - no priority
+* User Watchlist Integration - no priority
 * Stock pick charts for (Long) and (day trader)
 * Signal table for using for stock picks: https://github.com/mkoryak/floatThead
 * Obtain stock symbols and relating information: https://github.com/skillachie/finsymbols
