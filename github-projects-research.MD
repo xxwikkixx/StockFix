@@ -4,3 +4,6 @@
 * https://github.com/celeen/emotional_securities
 * https://github.com/FraPochetti/StocksProject
 * https://github.com/jasti/Stock-Predictor
+
+
+* https://github.com/eddywashere/node-stripe-membership-saas
