@@ -2,10 +2,10 @@
 
 
 ### Main Site Features: 
-* ~~Mailgun API to send email for forgotten password~~
-* ~~User Auth~~
-* ~~Subscription Stripe API~~
-* ~~User portal Dashboard~~
+* Mailgun API to send email for forgotten password~~
+* User Auth~~
+* Subscription Stripe API~~
+* User portal Dashboard~~
 * Chat for users on the webiste - no priority
 * User Watchlist Integration - no priority
 * Stock pick charts for (Long) and (day trader)
@@ -28,7 +28,7 @@ https://github.com/aurbano/robinhood-node
 
 ### Website to be scraped for data: 
 * traceinvest.com
-* ~~americanbulls.com~~
+* americanbulls.com~~
 * estockpicks.com
 * tim alerts
 * istockpicker.com
@@ -48,7 +48,7 @@ https://github.com/aurbano/robinhood-node
 https://github.com/mjstromberg/stock-patterns
 * Stock News Scraper
 * Summarizing market news and doing Sentimental analysis on it.
-* ~~Sentimental analysis 
+* Sentimental analysis 
 https://blog.nodejitsu.com/npmawesome-sentiment/
 https://github.com/thinkroth/Sentimental
 https://github.com/thisandagain/sentiment
